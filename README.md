@@ -1,4 +1,4 @@
-# web this is the H1-Develop
+# web this is the H1- develop2
 ## this is h2  
 ### this is h3
 #### this is h4
@@ -10,4 +10,12 @@
 
 ![BMO](image/BMO.png)
 
+develop2新增 
+
 develop上的更動
+
+*****
+三個以上的星號可以做分隔線
+
+---
+三個以上的減號
