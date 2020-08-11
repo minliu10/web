@@ -6,14 +6,16 @@
     <title>Lab</title>
 
     <style>
-        .fancytable{border:1px solid #cccccc; width:50%;border-collapse:collapse;}
-        .fancytable td{border:1px solid #cccccc; color:#555555;text-align:center;line-height:28px;}
-        .headerrow{ background-color:#0066cc;font-family: Microsoft JhengHei ; font-weight: bold;}
-        .headerrow td{ color:#ffffff; text-align:center;}
-        .datarowodd{background-color:#ffffff;font-family: Microsoft JhengHei ;}
-        .dataroweven{ background-color:#efefef;font-family: Microsoft JhengHei ;}
-        .datarowodd td{background-color:#ffffff;}
-        .dataroweven td{ background-color:#efefef;}
+        .titlerow{ background-color:#317A81;font-family: Microsoft JhengHei ; font-weight: bold;}
+        .titlerow td{ color:#ffffff; text-align:center;}
+        .fancytable{border:1px solid #ffffff; width:50%;border-collapse:collapse;}
+        .fancytable td{border:1px solid #ffffff;text-align:center;line-height:28px;}
+        .headerrow{ background-color:#DBEEF2;font-family: Microsoft JhengHei ;}
+        .headerrow td{ color:#317A81; text-align:center;}
+        .datarowodd{background-color:#DBEEF2;font-family: Microsoft JhengHei ; color: #555555;}
+        .dataroweven{ background-color:#ffffff;font-family: Microsoft JhengHei ; color: #555555;}
+        .datarowodd td{background-color:#DBEEF2;}
+        .dataroweven td{ background-color:#ffffff;}
     </style>
 </head>
 
@@ -63,19 +65,26 @@
 
 
         <table class="fancytable" >
+
+            <tr class="titlerow" >
+                <td colspan="3">我的Lab資料</td>
+            </tr>
+
+
+
             <tr class="headerrow">
                 <td>Lab</td>
                 <td>描述</td>
                 <td>連接</td>
             </tr>
 
-            <tr  class="datarowodd"><td>Lab_01</td>
+            <tr  class="dataroweven"><td>Lab_01</td>
                 <td>使用表格標籤做一份課表</td>
                 <td><a href="Lab_01.html"
                        title="Go to Lab_01"
                        target="_blank">Lab_01.html</a></td>
             </tr>
-            <tr  class="dataroweven">
+            <tr  class="datarowodd">
                 <td>Lab_02</td>
                 <td>使用style屬性美化課表</td>
                 <td><a href="Lab_02.html"
@@ -83,7 +92,7 @@
                        target="_blank">Lab_02.html</a></td>
             </tr>
 
-            <tr  class="datarowodd"><td>Lab_03</td>
+            <tr  class="dataroweven"><td>Lab_03</td>
                 <td>使用表格標籤做一份課表</td>
                 <td><a href="Lab_03.html"
                        title="Go to Lab_03"
