@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title of the document</title>
+
+    <style>
+
+        body {
+            background-color: black;
+        }
+
+        table {
+            margin: auto;
+            padding: 20px;
+            border-collapse: separate;
+            border-spacing: 0;
+            font-family: Microsoft JhengHei;
+            font-weight: 800;
+            text-align: center;
+        }
+
+        tr {
+            border: 2px solid white;
+            padding: 15px;
+            
+        }
+
+        td {
+            border: 2px solid white;
+            padding: 15px 30px;
+
+
+        }
+
+        td:first-child {
+            background-color: rgb(255, 189, 75);
+            color: black;
+        }
+
+        tr:first-child {
+            background-color: rgb(255, 189, 75);
+            color: black;
+        }
+
+        tr:nth-of-type(n+2) td:nth-of-type(n+2) {
+
+            background-color: black;
+            color: rgb(255, 189, 75);
+        }
+
+        
+
+        /*第一欄第一列：左上*/
+        tr:first-child td:first-child {
+            border-top-left-radius: 10px;
+        }
+
+        /*第一欄最後列：左下*/
+        tr:last-child td:first-child {
+            border-bottom-left-radius: 10px;
+        }
+
+        /*最後欄第一列：右上*/
+        tr:first-child td:last-child {
+            border-top-right-radius: 10px;
+        }
+
+        /*最後欄第一列：右下*/
+        tr:last-child td:last-child {
+            border-bottom-right-radius: 10px;
+        }
+
+        tr:nth-of-type(5) td:nth-of-type(n+2)
+        {
+            font-size: 40px;
+            text-align: center;
+        } 
+
+
+        
+/* 
+        #mid {text-shadow: 0.2em -0.1em 0.5em #87F, 0 0 0.5em #87F, 0 0 0.5em #87F,
+        0 0 0.5em #87F} */
+
+        
+        /* #mid {text-shadow: 0.2em -0.1em 0.5em #87F, 0.2em -0.1em 0.5em #87F,0.2em -0.1em 0.5em #87F} */
+        #mid {text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F,
+        0 0 0.2em #87F}
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <caption>課表</caption>
+        <tr>
+            <td></td>
+            <td>星期一</td>
+            <td>星期二</td>
+            <td>星期三</td>
+            <td>星期四</td>
+            <td>星期五</td>
+        </tr>
+        <tr>
+            <td>9:10</td>
+            <td>python基礎程式</td>
+            <td>Web 基礎程式設計</td>
+            <td>軟體工程專題</td>
+            <td>python基礎程式</td>
+            <td>Web 基礎程式設計</td>
+        </tr>
+        <tr>
+            <td>10:10</td>
+            <td>python基礎程式</td>
+            <td>Web 基礎程式設計</td>
+            <td>軟體工程專題</td>
+            <td>python基礎程式</td>
+            <td>Web 基礎程式設計</td>
+        </tr>
+        <tr>
+            <td>11:10</td>
+            <td>python基礎程式</td>
+            <td>Web 基礎程式設計</td>
+            <td>軟體工程專題</td>
+            <td>python基礎程式</td>
+            <td>Web 基礎程式設計</td>
+        </tr>
+        <tr>
+            <td>12:10</td>
+            <td colspan="5" id="mid">午休</td>
+        </tr>
+        <tr>
+            <td style=>13:10</td>
+            <td>python基礎程式</td>
+            <td>Web 基礎程式設計</td>
+            <td>資訊概論</td>
+            <td>python基礎程式</td>
+            <td>Web 基礎程式設計</td>
+        </tr>
+        <tr>
+            <td style=>14:10</td>
+            <td>python基礎程式</td>
+            <td>Web 基礎程式設計</td>
+            <td>資訊概論</td>
+            <td>python基礎程式</td>
+            <td>Web 基礎程式設計</td>
+        </tr>
+        <tr>
+            <td>15:10</td>
+            <td>python基礎程式</td>
+            <td>Web 基礎程式設計</td>
+            <td>資訊概論</td>
+            <td>python基礎程式</td>
+            <td>Web 基礎程式設計</td>
+        </tr>
+        <tr>
+            <td>16:10</td>
+            <td colspan="5"></td>
+
+        </tr>
+    </table>
+
+</body>
+
+</html>
