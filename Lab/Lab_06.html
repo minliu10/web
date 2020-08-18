@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title of the document</title>
+
+    <style>
+        .titlerow{ background-color:#317A81;font-family: Microsoft JhengHei ; font-weight: bold; padding: 10px; font-size: 20px;}
+        .titlerow td{ color:#ffffff; text-align:center; padding: 10px}
+        .fancytable{border:1px solid #ffffff; width:100%; height:100%; border-collapse:collapse;}
+        .fancytable td{border:1px solid #ffffff;text-align:center;line-height:28px;}
+        .headerrow{ background-color:#DBEEF2;font-family: Microsoft JhengHei ;}
+        .headerrow td{ color:#317A81; text-align:center; ;}
+        .datarowodd{background-color:#DBEEF2;font-family: Microsoft JhengHei ; color: #555555; padding: 15px;}
+        .dataroweven{ background-color:#ffffff;font-family: Microsoft JhengHei ; color: #555555; padding: 15px;}
+        .datarowodd td{background-color:#DBEEF2; padding: 15px;}
+        .dataroweven td{ background-color:#ffffff; padding: 15px;}
+
+
+        body
+        {
+            display: grid;
+            max-height: 100vh;
+            margin: 0;
+            grid-template-rows: 40% 5% 55%;
+            grid-template-columns: 25% 75%;
+            background-color:#DBEEF2;
+            font-family: Microsoft JhengHei;
+
+        }
+
+
+
+
+
+        #student_info
+        {
+            grid-column: 1;
+            grid-row: 1;
+            padding: 10px; 
+            text-align: center; 
+            font-size: 5vh;
+            
+        }
+        #list
+        {
+            grid-column: 1;
+            grid-row: 3;
+            font-size: 5vh;
+            padding: 15px;
+            padding-top: 20px;
+        }
+        #show_name
+        {
+            grid-column: 1;
+            grid-row: 2;
+            text-align: center; 
+            font-size: 5vh;
+            
+        }
+        #info
+        {
+            grid-column: 2;
+            grid-row: 1/ span 2;
+            padding: 10px;
+            padding-bottom: 0;
+        }
+        #content
+        {
+            grid-column: 2;
+            grid-row: 3;
+            padding: 10px;
+            padding-top: 20px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div id="info" >
+        <img src="../image/info2.jpg" style="width: 100%; max-height: 100%;">
+
+    </div>
+
+    <div id="list">
+        <ol style="margin: 0;">
+            <li>學生資料表</li>
+            <li>
+              課程相關
+              <ul>
+                <li>選課系統</li>
+                <li>課表</li>
+                <li>課程學分</li>
+                <li>成績查詢</li>
+              </ul>
+            </li>
+            <li>考試資訊</li>
+            <li>請假系統</li>
+            <li>學校資源</li>
+            <li>交通</li>
+            <li>停車場位置</li>
+        </ol>
+
+    </div>
+
+    <div id="student_info">
+        
+        <img src="../image/student_pic.jpg" style=" width: 100%; max-height: 100%;">
+    </div>
+
+    <div id="show_name" > 
+        歡迎回來! 貓貓
+    </div>
+    
+    
+
+   
+    <div id="content">
+        <table class="fancytable" >
+            <caption class="titlerow"> 課表</caption>
+            <tr class="headerrow">
+                <th></th>
+                <th>星期一</th>
+                <th>星期二</th>
+                <th>星期三</th>
+                <th>星期四</th>
+                <th>星期五</th>
+            </tr>
+            <tr class="dataroweven">
+                <td >9:10</td>
+                <td>python基礎程式</td>
+                <td>Web 基礎程式設計</td>
+                <td>軟體工程專題</td>
+                <td>python基礎程式</td>
+                <td>Web 基礎程式設計</td>
+            </tr>
+            <tr class="datarowodd">
+                <td>10:10</td>
+                <td>python基礎程式</td>
+                <td>Web 基礎程式設計</td>
+                <td>軟體工程專題</td>
+                <td>python基礎程式</td>
+                <td>Web 基礎程式設計</td>
+            </tr>
+            <tr class="dataroweven">
+                <td>11:10</td>
+                <td>python基礎程式</td>
+                <td>Web 基礎程式設計</td>
+                <td>軟體工程專題</td>
+                <td>python基礎程式</td>
+                <td>Web 基礎程式設計</td>
+            </tr>
+            <tr class="datarowodd">
+                <td>12:10</td>
+                <td colspan="5">午休</td>
+            </tr>
+            <tr class="dataroweven">
+                <td>13:10</td>
+                <td>python基礎程式</td>
+                <td>Web 基礎程式設計</td>
+                <td>資訊概論</td>
+                <td>python基礎程式</td>
+                <td>Web 基礎程式設計</td>
+            </tr>
+            <tr class="datarowodd">
+                <td>14:10</td>
+                <td>python基礎程式</td>
+                <td>Web 基礎程式設計</td>
+                <td>資訊概論</td>
+                <td>python基礎程式</td>
+                <td>Web 基礎程式設計</td>
+            </tr>
+            <tr class="dataroweven">
+                <td>15:10</td>
+                <td>python基礎程式</td>
+                <td>Web 基礎程式設計</td>
+                <td>資訊概論</td>
+                <td>python基礎程式</td>
+                <td>Web 基礎程式設計</td>
+            </tr>
+            <tr class="datarowodd">
+                <td>16:10</td>
+                <td colspan="5"></td>
+                
+            </tr>
+        </table>
+
+    </div>
+    
+
+</body>
+
+</html>
